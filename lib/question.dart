@@ -77,31 +77,38 @@ class _QuestionState
             height:
                 25,
           ),
-          OutlinedButton(
+          OutlinedButton.icon(
+            
+            style: OutlinedButton.styleFrom(
+              backgroundColor:
+                  Colors.black87),
             onPressed: () {
               answer(
                 'yes',
               );
             },
-            child: Text(
+            label: Text(
               'A: Yes',
               style: TextStyle(
                 color:
-                    Colors.black,
+                    Colors.white,
               ),
             ),
           ),
-          OutlinedButton(
+          OutlinedButton.icon(
+            style: OutlinedButton.styleFrom(
+              backgroundColor:
+                  Colors.black87),
             onPressed: () {
               answer(
                 'no',
               );
             },
-            child: Text(
+            label: Text(
               'B: No',
               style: TextStyle(
                 color:
-                    Colors.black,
+                    Colors.white,
               ),
             ),
           ),
